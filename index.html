@@ -18,17 +18,16 @@
         <div class="textedit">
             <div class="editor_title">C source code</div>
             <div id="c_src">void insertion_sort(int const n, int * const p) {
-
-                for (int i = 1; i &lt; n; i++) {
-                int const tmp = p[i];
-                int j = i;
-                while (j &gt; 0 &amp;&amp; p[j-1] &gt; tmp) {
-                p[j] = p[j-1];
-                j--;
-                }
-                p[j] = tmp;
-                }
-                }</div>
+    for (int i = 1; i &lt; n; i++) {
+        int const tmp = p[i];
+        int j = i;
+        while (j &gt; 0 &amp;&amp; p[j-1] &gt; tmp) {
+            p[j] = p[j-1];
+            j--;
+        }
+        p[j] = tmp;
+    }
+}</div>
         </div>
         <div class="buttons">
             <button id="translate">Translate</button>
