@@ -1,0 +1,120 @@
+/*
+$color1: rgba(245, 253, 198, 1); Yellow
+$color2: rgba(245, 195, 150, 1); Peach
+$color3: rgba(208, 177, 122, 1); Tan
+$color4: rgba(168, 159, 104, 1); Olive
+$color5: rgba(65, 82, 31, 1); Green
+*/
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+
+}
+
+h1, h2 {
+    font-weight: 300;
+    color: rgba(65, 82, 31, 1);
+}
+
+h1 {
+    clear: left;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+#maintext {
+    width: 70%;
+    margin: 0 auto 4em auto;
+
+}
+
+#editors {
+    margin: 0 auto;
+}
+
+.editor {
+    display: block;
+    width: 45.5%;
+    float: left;
+}
+
+#rust_editor { margin: 2em 3% 0 1.5%; }
+#c_editor    { margin: 2em 1.5% 0 3%; }
+
+
+.textedit {
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.editor_title {
+    background: rgba(208, 177, 122, 1);
+    padding: 0.2em;
+    padding-left: 0.5em;
+    border: 2px solid rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0.5);
+    border-top-left-radius:  4px;
+    border-top-right-radius: 4px;
+}
+
+#rust_src, #c_src {
+    height: 25rem;
+    border: 2px solid lightgray;
+    border-top: 0;
+}
+
+button {
+    background-color: rgba(65, 82, 31, 1);
+    color: white;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-top: 0.4em;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgba(208, 177, 122, 1);
+}
+
+button:active {
+    background-color: rgba(208, 177, 122, 1);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#uploadFile {
+    display: none;
+}
+
+#logos {
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    color: rgba(208, 177, 122, 1);
+    background-color: rgba(208, 177, 122, 1);
+    border: none;
+}
+
+#logos img {
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+#logos img:hover {
+    border-bottom: 1px dashed rgba(208, 177, 122, 1);
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 0.5em;
+}

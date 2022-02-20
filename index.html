@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>C2Rust Demonstration</title>
+    <link href="static/normalize.css" type="text/css" rel="stylesheet">
+    <link href="static/translate.css" type="text/css" rel="stylesheet" title="Default">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- ACE editor https://ace.c9.io/ -->
+    <script src="ace/ace.js"></script>
+
+</head>
+<div id="editors">
+    <div id="c_editor" class="editor">
+        <div class="textedit">
+            <div class="editor_title">C source code</div>
+            <div id="c_src">void insertion_sort(int const n, int * const p) {
+
+                for (int i = 1; i &lt; n; i++) {
+                int const tmp = p[i];
+                int j = i;
+                while (j &gt; 0 &amp;&amp; p[j-1] &gt; tmp) {
+                p[j] = p[j-1];
+                j--;
+                }
+                p[j] = tmp;
+                }
+                }</div>
+        </div>
+        <div class="buttons">
+            <button id="translate">Translate</button>
+            <button id="upload">Upload</button>
+            <select id="sample_list"></select>
+            <button id="load_sample">Load Sample</button>
+        </div>
+    </div>
+    <div id="rust_editor" class="editor">
+        <div class="textedit">
+            <div class="editor_title">Output</div>
+            <div id="rust_src"></div>
+        </div>
+        <div class="buttons">
+            <button id="download">Download output.rs</button>
+        </div>
+    </div>
+</div>
+<input type="file" id="uploadFile" />
+<script src="/static/translate.js"></script>
+</body>
+
+</html>
